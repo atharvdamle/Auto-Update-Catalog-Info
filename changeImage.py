@@ -10,4 +10,4 @@ for filename in os.listdir(path):
         im = Image.open(path+'/'+filename)
         im = im.convert('RGB')
         name = filename.split('.')
-        im.resize((600,400)).save(path+'/'+name[0]+'.jpg', format = "JPEG")
+        im.resize((600,400)).save(path+'/'+name[0]+'.jpeg', format = "JPEG")
